@@ -14,6 +14,8 @@
 		AC3A0D5E1AEB68DB005C49B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3A0D5D1AEB68DB005C49B1 /* Images.xcassets */; };
 		AC3A0D611AEB68DB005C49B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3A0D5F1AEB68DB005C49B1 /* LaunchScreen.xib */; };
 		AC3A0D6D1AEB68DB005C49B1 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A0D6C1AEB68DB005C49B1 /* testTests.swift */; };
+		AC3A0D771AEB7DD4005C49B1 /* haikei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC3A0D761AEB7DD4005C49B1 /* haikei.jpg */; };
+		AC3A0D791AEB7DF0005C49B1 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = AC3A0D781AEB7DF0005C49B1 /* haikei.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		AC3A0D661AEB68DB005C49B1 /* testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3A0D6B1AEB68DB005C49B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC3A0D6C1AEB68DB005C49B1 /* testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTests.swift; sourceTree = "<group>"; };
+		AC3A0D761AEB7DD4005C49B1 /* haikei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haikei.jpg; sourceTree = "<group>"; };
+		AC3A0D781AEB7DF0005C49B1 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		AC3A0D501AEB68DB005C49B1 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				AC3A0D781AEB7DF0005C49B1 /* haikei.png */,
+				AC3A0D761AEB7DD4005C49B1 /* haikei.jpg */,
 				AC3A0D531AEB68DB005C49B1 /* AppDelegate.swift */,
 				AC3A0D581AEB68DB005C49B1 /* ViewController.swift */,
 				AC3A0D5A1AEB68DB005C49B1 /* Main.storyboard */,
@@ -159,11 +165,13 @@
 		AC3A0D461AEB68DB005C49B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "釜木悦子";
 				TargetAttributes = {
 					AC3A0D4D1AEB68DB005C49B1 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8G4LGM24DA;
 					};
 					AC3A0D651AEB68DB005C49B1 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -195,7 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3A0D771AEB7DD4005C49B1 /* haikei.jpg in Resources */,
 				AC3A0D5C1AEB68DB005C49B1 /* Main.storyboard in Resources */,
+				AC3A0D791AEB7DF0005C49B1 /* haikei.png in Resources */,
 				AC3A0D611AEB68DB005C49B1 /* LaunchScreen.xib in Resources */,
 				AC3A0D5E1AEB68DB005C49B1 /* Images.xcassets in Resources */,
 			);
@@ -344,9 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,9 +367,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -413,6 +429,7 @@
 				AC3A0D721AEB68DB005C49B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC3A0D731AEB68DB005C49B1 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +438,7 @@
 				AC3A0D751AEB68DB005C49B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
